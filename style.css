@@ -1,0 +1,533 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+html {
+    overflow: overlay; /*scrollbar doesn't take up space*/
+    overflow-x: hidden; /*side scroll disabled*/
+}
+
+body {
+    background-color: black;
+}
+
+/* --------------- HEADER --------------------- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: .5px;
+    padding-top: 12px;
+}
+
+.headerLeft img {
+    height: 70px;
+    padding-bottom: 10px;
+}
+
+.headerLeft {
+    margin: 10px 0;
+}
+
+.headerRight {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerRight div {
+    padding: 15px;
+}
+
+.headerRight a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    font-weight: lighter;
+    font-size: 14px;  
+    width: 100px; 
+    text-align: center;
+}
+
+#active {
+    color: rgb(150, 150, 150);
+    border-bottom: 2px solid white;
+    padding-bottom: 8px;
+}
+
+#homeActive { 
+    color: rgb(150, 150, 150);
+    border-bottom: 2px solid black;
+    padding-bottom: 8px;
+}
+
+.media {
+    display: inline-block;
+    position: relative;
+}
+
+.mediaDropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 85px;
+    z-index: 1;
+    border-radius: 3px;
+    top: 48px;
+    left: 0;
+    text-align: center;
+}
+
+.mediaDropdown a {
+    color: black;
+    display: block;
+    margin: 10px 0;
+}
+
+.mediaDropdown a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.media:hover .mediaDropdown {
+    display: block;
+}
+
+
+
+/* --------------- HOME --------------------- */
+
+.homeImage {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    animation-duration: 6s;
+}
+
+.homeLabel {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0 0;
+    animation-duration: 6s;
+}
+
+.homeLabel h2 {
+    font-weight: 340;
+    font-size: 16px;
+}
+.homeImage img {
+    width: 100%;
+}
+
+/* --------------- ABOUT --------------------- */
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.aboutSection img {
+     width: 95%;
+     margin: 20px 0; 
+     animation-duration: 2s;
+}
+
+.aboutSection p {
+    margin: 0 15px;
+}
+
+.teachingPhilosophy {
+    color: white;
+    margin: 0 15px;
+    padding: 15px;
+    background-color: rgb(73, 73, 73);
+}
+/* --------------- MEDIA --------------------- */
+
+.mediaHome {
+    animation-duration: 3s;
+}
+
+.mediaHomeImage img{
+    width: 100%;
+}
+
+.mediaHomeLinks {
+    display:flex;
+    justify-content: space-evenly;
+    margin: 40px 10px;
+}
+
+.mediaHomeLinks a{
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.mediaHomeLinks a:hover{
+    background-color: rgb(112, 112, 112);
+}
+
+/* --------------- GALLERY --------------------- */
+
+.galleryBody {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.imgContainer img {
+    width: 100%;   
+}
+
+.imgContainer {
+    margin: 20px 0;
+}
+
+.imgContainer h2 {
+    margin: 10px 0 0;
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+}
+/* --------------- VIDEOS --------------------- */
+.videoPlayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.videoPlayer iframe {
+    width: 90%;
+    margin: 20px 0;
+    border: 1px solid gray;
+}
+
+/* --------------- LESSONS --------------------- */
+.lessonHome {
+    color: white;
+    margin: 20px ;
+    animation-duration: 4s;
+}
+
+.lessonHome img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.lessonHome p {
+    margin: 20px 0;
+}
+
+.lessonHome li {
+    list-style: none;
+}
+
+#lessonBtn {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lessonHome ul {
+    margin: 10px 0 20px;
+}
+
+.lessonLeft {
+    animation-duration: 3s;
+}
+
+.lessonRight {
+    animation-duration: 3s;
+}
+
+/* --------------- CONTACT --------------------- */
+.contactHome {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-image: url(./images/daddario-concert.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-blend-mode: multiply;
+    background-color: rgb(100, 100, 100);
+}
+
+.contactLeft {
+    margin: 15px;
+}
+
+.contactLeft h1 {
+    margin: 15px 0;
+}
+
+
+.contactRight textarea {
+    width: 80%;
+    margin: 5px 0;
+}
+
+.contactRight form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form input {
+    margin: 5px 0;
+}
+
+button {
+    margin: 15px 0;
+    padding: 8px;
+}
+
+
+
+/* --------------- PORTFOLIO --------------------- */
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+.portfolio-container div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+}
+
+.bg-portfolio1 {
+    background-image: url(images/bass-scroll.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(88, 88, 88);
+    
+}
+
+.bg-portfolio2 {
+    background-image: url(images/sheetmusic.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgb(70, 69, 69);
+}
+
+.bg-portfolio3 {
+    background-image: url(images/bass-section.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    background-color: rgb(97, 97, 97);
+}
+
+h1 {
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+#resume {
+    width: 80%;
+    height: 100vh;
+}
+
+#philosophy {
+    width: 70%;
+}
+
+.lessonPlan, .letter {
+    width: 80%;
+    height: 75vh;
+}
+
+.lesson-plan-title, .letter-title {
+    padding: 20px;
+    width: 80%;
+}
+#teaching-certificate {
+    width: 70%;
+    height: 50vh
+}
+
+
+
+/* --------------- FOOTER --------------------- */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    left: 0;
+    bottom: 0;
+    color: white;
+
+}
+
+.fa {
+    font-size: 30px;
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.fa:hover {
+    color: rgb(150, 150, 150);
+    transition: .25s;
+}
+
+@media (min-width: 768px) {
+    .homeImage {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .galleryBody {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgContainer img {
+        width: 80%;   
+    }
+
+    .contactHome {
+        margin: 20px 0 0;
+        height: 80vh;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1280px) {
+    header {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .headerRight {
+        width: initial;
+    }
+
+    .homeImage {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 60%;
+    }
+
+    .homeImage img {
+        width: 60%;
+    }
+
+    .homeLabel {
+        flex-direction: column;
+        margin: 0 30px;
+    }
+
+    .aboutSection {
+        flex-direction: row;
+        margin: 30px 0;
+    }
+
+    .aboutSection img {
+        width: 30%;
+    }
+
+    .aboutSection p {
+        width: 40%;
+        margin: 0 60px;
+    }
+
+    .teachingPhilosophy {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .mediaHomeImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mediaHomeImage img{
+        width: 70%;
+    }
+
+    .videoPlayer iframe {
+        width: 50%;
+    }
+    .lessonHome {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .lessonHome img {
+        width: 90%;
+    }
+
+    .lessonRight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lessonLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #lessonBtn {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contactHome {
+        height: 100vh;
+        width: 60%;
+        margin: 30px auto;
+    }
+}
